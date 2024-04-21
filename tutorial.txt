@@ -1,0 +1,38 @@
+buka terminal
+Setup Aplikasi
+Jalankan perintah
+
+composer update
+atau:
+
+composer install
+Copy file .env dari .env.example
+
+cp .env.example .env
+Konfigurasi file .env
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=example_app
+DB_USERNAME=root
+DB_PASSWORD=
+Opsional
+
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:QGRW4K7UVzS2M5HE2ZCLlUuiCtOIzRSfb38iWApkphE=
+APP_DEBUG=true
+APP_URL=http://example-app.test
+Generate key
+
+php artisan key:generate
+Migrate database
+
+php artisan migrate
+Seeder table User, Pengaturan
+
+php artisan db:seed
+Menjalankan aplikasi
+
+php artisan serve
